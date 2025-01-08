@@ -1,0 +1,80 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{amssymb, amsfonts, amsmath}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage[top=2.5cm, bottom=2.5cm, left=1.25cm, right=1.25cm]{geometry}
+
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\tg}{tg}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+  \begin{tabular}{ccc}
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/brasao-de-armas-brasil} \\
+    \end{tabular} & 
+    \begin{tabular}{c}
+      Ministério da Educação \\
+      Universidade Federal dos Vales do Jequitinhonha e Mucuri \\
+      Faculdade de Ciências Sociais, Aplicadas e Exatas - FACSAE \\
+      Departamento de Ciências Exatas - DCEX \\
+      Disciplina: Introdução à Ciência da Computação \quad Semestre: 2024/2\\
+      Prof. Dr. Luiz C. M. de Aquino\\
+    \end{tabular} &
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/logo-ufvjm} \\
+    \end{tabular}
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \textbf{Trabalho I}
+\end{center}
+
+  Suponha que você vai usar uma matriz $10\times 10$ para representar o tabuleiro 
+  do jogo Batalha Naval. Nessa matriz, os elementos iguais a $0$ vão representar 
+  posições desocupadas, enquanto que elementos iguais a $1$, $2$ ou $3$ vão representar
+  posições ocupadas por embarcações.
+  
+  Considere que existem três tipos de embarcação nesse
+  jogo. O Tipo I é composto pela matriz $1\times 1$ dada por $\begin{bmatrix} 1 \end{bmatrix}$.
+  O Tipo II é composto pela matriz $1\times 2$ (ou $2\times 1$) dada por 
+  $\begin{bmatrix} 2 \\ 2 \end{bmatrix}$ (ou $\begin{bmatrix} 2 & 2 \end{bmatrix}$).
+  Por fim, o Tipo III é composto pela matriz $2\times 2$ dada por 
+  $\begin{bmatrix} 3 & 3\\ 3 & 3 \end{bmatrix}$.
+  
+  Faça um algoritmo em Python que recebe uma matriz $10\times 10$ representando 
+  o tabuleiro de um jogador. Considere que o jogador tem 3 embarcações do Tipo I,
+  2 do Tipo II e 1 do Tipo III. O seu algoritmo deve procurar nessa matriz as posições
+  ocupadas pelas embarcações e informá-las. Por exemplo, suponha que seja dada a seguinte
+  matriz:
+  $$
+  \begin{bmatrix}
+    0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    0 & 0 & 0 & 0 & 0 & 0 & 2 & 2 & 0 & 0 \\
+    0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+    0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    0 & 0 & 0 & 0 & 3 & 3 & 0 & 0 & 0 & 0 \\
+    0 & 0 & 0 & 0 & 3 & 3 & 0 & 0 & 1 & 0 \\
+    0 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    0 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0
+  \end{bmatrix}
+  $$  
+  
+  O seu algoritmo deve informar que:
+  
+  \begin{itemize}
+    \item as embarcações do Tipo I estão nas posições $(4,\, 3)$, $(3,\, 8)$ e
+    $(8,\, 9)$;
+    \item as embarcações do Tipo II estão nas posições $(2,\, 7)$ e $(9,\, 3)$;
+    \item a embarcação do Tipo III está na posição $(7,\, 5)$.
+  \end{itemize}
+
+\end{document}

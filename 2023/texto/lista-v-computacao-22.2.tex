@@ -1,0 +1,63 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{amssymb, amsfonts, amsmath}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage[top=2.5cm, bottom=2.5cm, left=1.25cm, right=1.25cm]{geometry}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+  \begin{tabular}{ccc}
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/brasao-de-armas-brasil} \\
+    \end{tabular} & 
+    \begin{tabular}{c}
+      Ministério da Educação \\
+      Universidade Federal dos Vales do Jequitinhonha e Mucuri \\
+      Faculdade de Ciências Sociais, Aplicadas e Exatas - FACSAE \\
+      Departamento de Ciências Exatas - DCEX \\
+      Disciplina: Introdução à Ciência da Computação \quad Semestre: 2022/2\\
+      Prof. Dr. Luiz C. M. de Aquino\\
+    \end{tabular} &
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/logo-ufvjm} \\
+    \end{tabular}
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \textbf{Lista V}
+\end{center}
+
+\begin{enumerate}
+  \item  Faça uma função recursiva que recebe como argumento um número natural $n$ e
+  retorna a soma de todos os números naturais até $n$.
+
+  \item  Faça uma função recursiva que recebe como argumentos dois números naturais
+  $m$ e $n$ e retorna o resultado da divisão inteira de $m$ por $n$. Na sua função
+  use apenas as operações aritméticas de soma ou subtração.
+
+  \item Faça uma função recursiva que recebe como argumento um vetor com números
+  reais e retorna a soma de todos esses números.
+ 
+  \item Faça uma função recursiva que recebe como argumento um vetor com números
+  reais e retorna o menor desses números.
+  
+  \item Considere a sequência $\{a_1,\,a_2,\,a_3,\,\cdots\}$ cujo $n$-ésimo
+  termo é definido por:
+  $$a_n = 
+      \begin{cases}
+      2,\,\textrm{ se } n < 3 \\
+      3a_{n-1} + 2a_{n-2},\,\textrm{ se } n \geq 3
+      \end{cases}
+  $$
+  
+  Faça uma função recursiva que recebe como argumento um número natural $k > 0$
+  e retorna o valor do termo $a_k$.
+\end{enumerate}
+
+\end{document}
